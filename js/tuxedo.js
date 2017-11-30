@@ -1,5 +1,11 @@
 $(document).ready(function() {
-
+  $(window).resize(function(){
+    if ($(window).width() >= 1200) {
+      $('#go-here').addClass("animate-in");
+    } else {
+      $('#go-here').removeClass("animate-in");
+    }
+  });
   //=================Animation functionality=============//
   function animations() {
     $(window).scroll( function(){  /* Every time the window is scrolled ... */
@@ -112,6 +118,7 @@ function heroSlideshow() {
 
 
 ////////// Add Functions to Call HERE//////////
-mobileMenu(); 
+mobileMenu();
+animations();
 
 });

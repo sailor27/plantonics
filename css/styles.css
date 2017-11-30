@@ -23,7 +23,9 @@ h1 {
   padding: 10px 0; }
   h1.title {
     font-size: 72px;
-    display: inline-block; }
+    display: inline-block;
+    position: relative;
+    top: -83px; }
 
 h2 {
   font-size: 30px;
@@ -194,7 +196,9 @@ ul {
     margin: auto;
     text-align: center;
     font-size: 1.5rem;
-    transition: width ease-in 200ms; }
+    transition: width ease-in 200ms;
+    background: rgba(222, 184, 135, 0.9);
+    border-radius: 50px; }
     .hero header img {
       width: 15vw; }
     @media screen and (max-width: 760px) {
