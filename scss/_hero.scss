@@ -24,7 +24,7 @@
     font-size: 1.5rem;
     transition: width ease-in 200ms;
     img {
-      max-width: 100%;
+      width: 15vw;
     }
     @media screen and #{$tablet} {
       width: 100%;

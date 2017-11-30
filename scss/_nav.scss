@@ -1,15 +1,19 @@
 nav {
+  display: none;
+
   position: absolute; //change to position: relative for bar that starts above content & position: fixed for a fixed nav
   width: 100%;
   height: 60px;
   max-width: 1200px; //change how wide nav is allowed to go
   left: 50%;
-  display: flex;
   transform: translate(-50%,0);
   z-index: 2;
   font-family: $header-font;
   @media screen and #{$tablet} {
     padding-right: 30px;
+  }
+@media screen and #{$desktop}{
+  display: flex;
   }
   .menu-items {
     flex: 3;
@@ -28,7 +32,7 @@ nav {
       &:hover {
         background: $light;
         color: $dark;
-        cursor: pointer;
+        cursor:pointer;
       }
       a:hover {
         color: inherit;
@@ -41,6 +45,7 @@ nav {
     align-self: center;
     img {
       height: 5vw;
+      max-height: 45px;
       object-fit: cover;
     }
   }
@@ -66,8 +71,9 @@ nav {
 }
 .nav-ghost-dark {
   border-bottom: 2px solid $dark;
-  color: $dark;
+  color: $dark-grey;
 }
+
 .nav-ghost-pop {
   border-bottom: 2px solid $color-pop;
   color: $color-pop;
