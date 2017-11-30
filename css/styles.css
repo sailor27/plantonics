@@ -170,6 +170,7 @@ ul {
     flex: 100%; } }
 
 .hero {
+  display: none;
   position: relative;
   font-family: "Josefin Sans", sans-serif;
   height: 100vh;
@@ -181,6 +182,9 @@ ul {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); }
+  @media screen and (min-width: 1200px) {
+    .hero {
+      display: block; } }
   .hero header {
     width: 70%;
     padding: 20px;
@@ -321,7 +325,7 @@ nav {
     flex: 1;
     align-self: center; }
     nav header img {
-      height: 18px;
+      height: 5vw;
       object-fit: cover; }
 
 .nav-light {
@@ -480,6 +484,9 @@ nav {
   @media screen and (max-width: 760px) {
     .side-bar {
       display: none; } }
+  @media screen and (min-width: 1200px) {
+    .side-bar {
+      display: none; } }
   .side-bar img {
     display: block;
     margin: auto;
@@ -506,6 +513,9 @@ nav {
   min-height: 100vh; }
   .side-bar-content img {
     width: 100%; }
+  .side-bar-content h1 {
+    font-size: 3.5em;
+    text-align: center; }
   @media screen and (max-width: 1015px) {
     .side-bar-content {
       padding-left: 45%; } }

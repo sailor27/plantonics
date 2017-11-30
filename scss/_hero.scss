@@ -1,4 +1,5 @@
 .hero {
+  display: none;
   position: relative;
   font-family: $header-font;
   height: 100vh;
@@ -11,6 +12,10 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
+  @media screen and #{$desktop}{
+    display: block;
+  }
+
   header {
     width: 70%;
     padding: 20px;
@@ -45,6 +50,7 @@
     @media screen and #{$mobile-landscape} {
         height: 170vh; //customize this height to control how large hero should be in landscape mode on mobile devices
       }
+
   }
 }
 

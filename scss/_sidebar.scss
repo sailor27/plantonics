@@ -12,6 +12,9 @@
   @media screen and #{$tablet} { //sidebar is no longer visible at tablet screen size
     display: none;
   }
+  @media screen and #{$desktop} { //sidebar is no longer visible at desktop(1200px+) screen size
+    display: none;
+  }
   img { //styling for any images placed within the sidebar
     display: block;
     margin:auto;
@@ -44,6 +47,11 @@
   min-height: 100vh;
     img {
       width: 100%;
+    }
+    h1{
+      font-size: 3.5em;
+      text-align: center;
+
     }
   //makes sidebar same height as viewport while still allowing for scrolling
   @media screen and ('max-width: 1015px') { //when sidebar begins to scale down so does the contenet distance from sidebar
