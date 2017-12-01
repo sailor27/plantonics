@@ -1,6 +1,7 @@
 //================Side Bar Styling======//
 //follow code with RIGHT POSITIONED SIDEBAR to change sidebar to right side
 .side-bar {
+
   font-family: $header-font;
   position: fixed; //keeps sidebar in place despite scrolling
   overflow: auto;
@@ -9,9 +10,9 @@
   padding: 60px;
   max-width: 400px; //maximum width sidebar is allowed to expand
   width: 40%;
-  @media screen and #{$tablet} { //sidebar is no longer visible at tablet screen size
+  @media screen and #{$tablet} { //sidebar is no longer visible at smallest screen size
     display: none;
-  }
+  }  
   @media screen and #{$desktop} { //sidebar is no longer visible at desktop(1200px+) screen size
     display: none;
   }
@@ -42,7 +43,7 @@
 .side-bar-content { //sidebar content
   padding: 60px 5% 30px 450px; //keeps content from overlapping with sidebar
   // padding: 60px 450px 30px 5%; //Uncomment for RIGHT POSITIONED SIDEBAR
-  margin: auto;
+
   max-width: 1400px;
   min-height: 100vh;
     img {
@@ -52,6 +53,8 @@
       font-size: 3.5em;
       text-align: center;
     }
+
+
   //makes sidebar same height as viewport while still allowing for scrolling
   @media screen and ('max-width: 1015px') { //when sidebar begins to scale down so does the contenet distance from sidebar
     padding-left: 45%; //Comment out for RIGHT POSITIONED SIDEBAR

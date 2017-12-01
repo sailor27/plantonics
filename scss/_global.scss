@@ -14,6 +14,7 @@ $color-pop: #2A7F62;
 // #a30cf1 purple
 // #f8f2fe white-purple
 // #ff4ed0 pink
+// background-image: linear-gradient(to top right, #EF0BFE 0%, #020308 80%);
 
 //fonts - to update, import a new font below
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans:100i,300,700,700i|Lato:300,400,700');
@@ -26,4 +27,10 @@ $body-font: 'Lato', sans-serif;
   font-family: 'Lato', sans-serif;
   font-weight: lighter;
   letter-spacing: .5px;
+}
+
+.purple-stuff{
+
+
+  background-image: linear-gradient(to top right, #EF0BFE 0%, #020308 80%);
 }

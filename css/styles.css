@@ -13,6 +13,9 @@ h6, p, small {
   font-weight: lighter;
   letter-spacing: .5px; }
 
+.purple-stuff {
+  background-image: linear-gradient(to top right, #EF0BFE 0%, #020308 80%); }
+
 h1, h2, h3, h4, h5, blockquote {
   font-family: "Josefin Sans", sans-serif; }
 
@@ -519,7 +522,6 @@ nav {
 
 .side-bar-content {
   padding: 60px 5% 30px 450px;
-  margin: auto;
   max-width: 1400px;
   min-height: 100vh; }
   .side-bar-content img {
